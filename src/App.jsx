@@ -10,7 +10,7 @@ function App() {
 
   // Set the document title to your roll number
   useEffect(() => {
-    document.title = '21BCI0246';
+    document.title = '21BIT0611';
   }, []);
 
   const options = [
@@ -25,7 +25,7 @@ function App() {
       const parsedJson = JSON.parse(jsonInput);
 
       // Call the backend API
-      const res = await axios.post('https://bajaj-finserv-backend-phi.vercel.app/bfhl', parsedJson);
+      const res = await axios.post('https://baja-backend-alpha.vercel.app/bfhl', parsedJson);
       setResponse(res.data);
       setError('');
     } catch (err) {
